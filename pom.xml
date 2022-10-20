@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright (c) 2011-2017, jcabi.com
+Copyright (c) 2011-2022, jcabi.com
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -33,7 +33,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
   <parent>
     <groupId>com.jcabi</groupId>
     <artifactId>jcabi</artifactId>
-    <version>1.30.0</version>
+    <version>1.36.0</version>
   </parent>
   <artifactId>jcabi-http</artifactId>
   <version>2.0-SNAPSHOT</version>
@@ -63,42 +63,63 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     <dependency>
       <groupId>com.jcabi</groupId>
       <artifactId>jcabi-immutable</artifactId>
+      <version>1.5</version>
     </dependency>
     <dependency>
       <groupId>com.jcabi</groupId>
       <artifactId>jcabi-aspects</artifactId>
+      <version>0.24.1</version>
     </dependency>
     <dependency>
       <groupId>com.jcabi</groupId>
       <artifactId>jcabi-log</artifactId>
+      <version>0.22.0</version>
     </dependency>
     <dependency>
       <groupId>com.jcabi</groupId>
       <artifactId>jcabi-manifests</artifactId>
+      <version>1.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
+      <version>1.18.24</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>2.0.0-alpha5</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
       <artifactId>validation-api</artifactId>
+      <version>2.0.1.Final</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
+      <version>3.12.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
+      <version>2.11.0</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>javax.json</groupId>
       <artifactId>javax.json-api</artifactId>
+      <version>1.1.4</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
@@ -119,6 +140,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
       -->
       <groupId>com.jcabi</groupId>
       <artifactId>jcabi-matchers</artifactId>
+      <version>1.6.0</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
@@ -137,13 +159,14 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     <dependency>
       <groupId>com.jcabi</groupId>
       <artifactId>jcabi-xml</artifactId>
-      <version>0.23.2</version>
+      <version>0.25.4</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
+      <version>5.9.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -206,7 +229,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
       <artifactId>jersey-client</artifactId>
       <scope>provided</scope>
       <optional>true</optional>
-      <version>2.25.1</version>
+      <version>2.37</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -225,42 +248,47 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-server</artifactId>
-      <version>2.25.1</version>
+      <version>2.37</version>
       <scope>test</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>
-      <version>1.15.1</version>
+      <version>1.15.3</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
+      <version>2.13.4.2</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
+      <version>2.13.4</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>testcontainers</artifactId>
+      <version>1.17.3</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>junit-jupiter</artifactId>
+      <version>1.17.5</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.glassfish</groupId>
       <artifactId>javax.json</artifactId>
+      <version>1.1.4</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -269,21 +297,21 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
       <dependency>
         <groupId>com.fasterxml.jackson</groupId>
         <artifactId>jackson-bom</artifactId>
-        <version>2.13.3</version>
+        <version>2.13.4.20221013</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
       <dependency>
         <groupId>org.testcontainers</groupId>
         <artifactId>testcontainers-bom</artifactId>
-        <version>1.17.2</version>
+        <version>1.17.5</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
-        <version>5.8.2</version>
+        <version>5.9.1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -292,13 +320,6 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
   <build>
     <plugins>
       <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-      <plugin>
         <artifactId>maven-failsafe-plugin</artifactId>
         <executions>
           <execution>
@@ -306,69 +327,6 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
               <goal>integration-test</goal>
               <goal>verify</goal>
             </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <configuration>
-          <output>file</output>
-          <outputDirectory>${project.build.directory}/coverage</outputDirectory>
-        </configuration>
-        <executions>
-          <execution>
-            <id>jacoco-initialize</id>
-            <goals>
-              <goal>prepare-agent</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>jacoco-check</id>
-            <phase>test</phase>
-            <goals>
-              <goal>check</goal>
-              <goal>report</goal>
-            </goals>
-            <configuration>
-              <rules>
-                <rule>
-                  <element>BUNDLE</element>
-                  <limits>
-                    <limit>
-                      <counter>INSTRUCTION</counter>
-                      <value>COVEREDRATIO</value>
-                      <minimum>0.62</minimum>
-                    </limit>
-                    <limit>
-                      <counter>LINE</counter>
-                      <value>COVEREDRATIO</value>
-                      <minimum>0.82</minimum>
-                    </limit>
-                    <limit>
-                      <counter>BRANCH</counter>
-                      <value>COVEREDRATIO</value>
-                      <minimum>0.33</minimum>
-                    </limit>
-                    <limit>
-                      <counter>COMPLEXITY</counter>
-                      <value>COVEREDRATIO</value>
-                      <minimum>0.44</minimum>
-                    </limit>
-                    <limit>
-                      <counter>METHOD</counter>
-                      <value>COVEREDRATIO</value>
-                      <minimum>0.64</minimum>
-                    </limit>
-                    <limit>
-                      <counter>CLASS</counter>
-                      <value>MISSEDCOUNT</value>
-                      <maximum>1</maximum>
-                    </limit>
-                  </limits>
-                </rule>
-              </rules>
-            </configuration>
           </execution>
         </executions>
       </plugin>
@@ -382,7 +340,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
           <plugin>
             <groupId>org.owasp</groupId>
             <artifactId>dependency-check-maven</artifactId>
-            <version>7.1.1</version>
+            <version>7.2.1</version>
             <configuration>
               <failBuildOnCVSS>7.0</failBuildOnCVSS>
               <failOnError>true</failOnError>
@@ -405,6 +363,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
           <plugin>
             <groupId>com.qulice</groupId>
             <artifactId>qulice-maven-plugin</artifactId>
+            <version>0.19.4</version>
             <configuration>
               <excludes combine.children="append">
                 <exclude>duplicatefinder:.*</exclude>
